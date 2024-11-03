@@ -1,0 +1,282 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f4f4f9 30%, #eaeaea);
+    color: #333;
+    line-height: 1.6;
+    font-weight: 400;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 1rem 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Style for Mehdi Innovative Coder */
+.brand-name {
+    font-family: 'Poppins', sans-serif;
+    color: #ffd700;
+    font-size: 3rem; /* Increased font size */
+    font-weight: 600; /* Semi-bold for a graceful look */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Adds a little spacing for elegance */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3); /* Adds a soft shadow for depth */
+}
+
+/* Header Title */
+.header-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFD700;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-links a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffd700;
+    transition: width 0.3s;
+    margin-top: 5px;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Hire Me Button */
+.hire-me-btn {
+    background: linear-gradient(145deg, #ffd700, #ffcc00);
+    color: #222;
+    padding: 0.6rem 1.2rem;
+    border-radius: 25px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.3s ease;
+    text-align: center;
+    margin-left: 1rem;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.hire-me-btn:hover {
+    background: #ffcc00;
+    transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 5rem 2rem;
+    background: linear-gradient(160deg, #1a1a2e, #2d2e48);
+    color: #fff;
+    font-weight: 600;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: auto;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 2.2rem;
+    background-color: #ffd700;
+    color: #222;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+/* Bio and Projects Section */
+.bio, .projects, footer {
+    padding: 3rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    font-weight: 400;
+}
+
+.bio h2, .projects h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.bio-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    margin-top: 1rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    margin: 2rem 0;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-weight: 500;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project-image:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Section */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 3rem;
+    text-align: center;
+    border-top: 5px solid #ffd700;
+}
+
+.contact-info {
+    list-style: none;
+    padding-top: 1.5rem;
+    font-weight: 500;
+}
+
+.contact-info li {
+    display: inline-block;
+    margin: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+}
+
+.contact-info a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-info a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.highlighted-link {
+    color: #ffd700;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.highlighted-link:hover {
+    color: #ffcc00;
+}
+
+/* Icon Styles */
+.contact-info i {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+    vertical-align: middle;
+}
+
+/* Responsive Layout for Smaller Screens */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .hire-me-btn {
+        margin-top: 1rem;
+        align-self: center;
+    }
+}
